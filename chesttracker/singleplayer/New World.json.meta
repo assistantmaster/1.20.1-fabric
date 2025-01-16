@@ -1,0 +1,33 @@
+{
+  "filtering": {
+    "rememberedContainers": "ALL",
+    "rememberEnderChests": true,
+    "autoAddPlacedBlocks": "SHULKER_BOXES_ONLY",
+    "manualMode": false,
+    "onlyRememberNamed": false
+  },
+  "integrity": {
+    "memoryLifetime": "TWELVE_HOURS",
+    "preserveNamed": true,
+    "lifetimeCountMode": "LOADED_TIME",
+    "removeOnPlayerBlockBreak": true,
+    "checkPeriodicallyForMissingBlocks": true
+  },
+  "search": {
+    "itemListRange": 256,
+    "searchRange": 256,
+    "stackMergeMode": "ALL",
+    "unpackNested": true
+  },
+  "visual": {
+    "icons": [],
+    "useDefaultIconOrder": true
+  },
+  "name": "Singleplayer: New World",
+  "lastModified": "2024-12-13T15:37:00.334435800Z",
+  "loadedTime": 1049,
+  "compatibility": {
+    "nameFilterMode": "NO_FILTER",
+    "nameRenderMode": "FULL"
+  }
+}

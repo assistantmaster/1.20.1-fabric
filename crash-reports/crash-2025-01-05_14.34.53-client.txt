@@ -1,0 +1,307 @@
+---- Minecraft Crash Report ----
+// Don't do that.
+
+Time: 2025-01-05 14:34:53
+Description: Unexpected error
+
+java.lang.RuntimeException: Xaero's World Map (1.20_1.39.0_fabric) has crashed! Please report here: bit.ly/XaeroWMIssues
+	at knot//xaero.map.CrashHandler.checkForCrashes(CrashHandler.java:15)
+	at knot//xaero.map.MapProcessor.onRenderProcess(MapProcessor.java:545)
+	at knot//xaero.map.events.ClientEvents.handleRenderTick(ClientEvents.java:88)
+	at knot//net.minecraft.class_757.handler$del001$xaeroworldmap$onRenderEnd(class_757.java:12133)
+	at knot//net.minecraft.class_757.method_3192(class_757.java:979)
+	at knot//net.minecraft.class_310.method_1523(class_310.java:1219)
+	at knot//net.minecraft.class_310.method_1514(class_310.java:802)
+	at knot//net.minecraft.client.main.Main.main(Main.java:250)
+	at net.fabricmc.loader.impl.game.minecraft.MinecraftGameProvider.launch(MinecraftGameProvider.java:480)
+	at net.fabricmc.loader.impl.launch.knot.Knot.launch(Knot.java:74)
+	at net.fabricmc.loader.impl.launch.knot.KnotClient.main(KnotClient.java:23)
+Caused by: java.lang.NullPointerException: Deflater has been closed
+	at java.base/java.util.zip.Deflater.ensureOpen(Deflater.java:898)
+	at java.base/java.util.zip.Deflater.deflate(Deflater.java:566)
+	at java.base/java.util.zip.Deflater.deflate(Deflater.java:465)
+	at java.base/java.util.zip.DeflaterOutputStream.deflate(DeflaterOutputStream.java:259)
+	at java.base/java.util.zip.ZipOutputStream.closeEntry(ZipOutputStream.java:268)
+	at java.base/java.util.zip.ZipOutputStream.finish(ZipOutputStream.java:374)
+	at java.base/java.util.zip.DeflaterOutputStream.close(DeflaterOutputStream.java:244)
+	at java.base/java.util.zip.ZipOutputStream.close(ZipOutputStream.java:391)
+	at java.base/java.io.FilterOutputStream.close(FilterOutputStream.java:191)
+	at knot//xaero.map.file.MapSaveLoad.saveRegion(MapSaveLoad.java:540)
+	at knot//xaero.map.file.MapSaveLoad.run(MapSaveLoad.java:1090)
+	at knot//xaero.map.MapProcessor.run(MapProcessor.java:343)
+	at knot//xaero.map.MapRunner.run(MapRunner.java:18)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+	Suppressed: java.io.IOException: Es steht nicht genug Speicherplatz auf dem Datenträger zur Verfügung
+		at java.base/java.io.FileOutputStream.writeBytes(Native Method)
+		at java.base/java.io.FileOutputStream.write(FileOutputStream.java:349)
+		at java.base/java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:81)
+		at java.base/java.io.BufferedOutputStream.flush(BufferedOutputStream.java:142)
+		at java.base/java.util.zip.DeflaterOutputStream.flush(DeflaterOutputStream.java:290)
+		at java.base/java.io.DataOutputStream.flush(DataOutputStream.java:128)
+		at java.base/java.io.FilterOutputStream.close(FilterOutputStream.java:182)
+		... 5 more
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Render thread
+Stacktrace:
+	at knot//xaero.map.CrashHandler.checkForCrashes(CrashHandler.java:15)
+	at knot//xaero.map.MapProcessor.onRenderProcess(MapProcessor.java:545)
+	at knot//xaero.map.events.ClientEvents.handleRenderTick(ClientEvents.java:88)
+	at knot//net.minecraft.class_757.handler$del001$xaeroworldmap$onRenderEnd(class_757.java:12133)
+
+-- Affected level --
+Details:
+	All players: 2 total; [class_746['TCT2020TCT'/7097369, l='ClientLevel', x=3834.18, y=90.00, z=-3863.19], class_745['_Doktor_TG_'/7187680, l='ClientLevel', x=3843.80, y=92.11, z=-3855.89]]
+	Chunk stats: 16384, 3653 F: 569 L: 0 U: 522
+	Level dimension: minecraft:overworld
+	Level spawn location: World: (-16,77,-288), Section: (at 0,13,0 in -1,4,-18; chunk contains blocks -16,-64,-288 to -1,319,-273), Region: (-1,-1; contains chunks -32,-32 to -1,-1, blocks -512,-64,-512 to -1,319,-1)
+	Level time: 72581255 game time, 79114642 day time
+	Server brand: Paper
+	Server type: Non-integrated multiplayer server
+Stacktrace:
+	at knot//net.minecraft.class_638.method_8538(class_638.java:458)
+	at knot//net.minecraft.class_310.method_1587(class_310.java:2406)
+	at knot//net.minecraft.class_310.method_1514(class_310.java:826)
+	at knot//net.minecraft.client.main.Main.main(Main.java:250)
+	at net.fabricmc.loader.impl.game.minecraft.MinecraftGameProvider.launch(MinecraftGameProvider.java:480)
+	at net.fabricmc.loader.impl.launch.knot.Knot.launch(Knot.java:74)
+	at net.fabricmc.loader.impl.launch.knot.KnotClient.main(KnotClient.java:23)
+
+-- Last reload --
+Details:
+	Reload number: 1
+	Reload reason: initial
+	Finished: Yes
+	Packs: vanilla, fabric, file/TCT2020TCT Totem, file/No_Pumpkin_Blur_119b_3plus.zip, file/VanillaTweaks Visual Infested Stone Items.zip, file/VanillaTweaks Spyglass Meme.zip, continuity:default, continuity:glass_pane_culling_fix, minecraft:supporteatinganimation, file/VanillaTweaks_r572256.zip, file/CTM-Overhaul-V_5.0.zip, file/Brewing Guide 1.20.zip, file/GUIdes v.1.1.zip, file/shiny ores 1.20.5–1.20.6 v1.2.zip, file/VanillaTweaks 3D.zip, Essential Assets, essential
+
+-- System Details --
+Details:
+	Minecraft Version: 1.20.1
+	Minecraft Version ID: 1.20.1
+	Operating System: Windows 11 (amd64) version 10.0
+	Java Version: 17.0.8, Microsoft
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode), Microsoft
+	Memory: 2492555384 bytes (2377 MiB) / 12733906944 bytes (12144 MiB) up to 18891145216 bytes (18016 MiB)
+	CPUs: 12
+	Processor Vendor: GenuineIntel
+	Processor Name: Intel(R) Core(TM) i5-10400F CPU @ 2.90GHz
+	Identifier: Intel64 Family 6 Model 165 Stepping 3
+	Microarchitecture: unknown
+	Frequency (GHz): 2.90
+	Number of physical packages: 1
+	Number of physical CPUs: 6
+	Number of logical CPUs: 12
+	Graphics card #0 name: NVIDIA GeForce GTX 1650 SUPER
+	Graphics card #0 vendor: NVIDIA (0x10de)
+	Graphics card #0 VRAM (MB): 4095.00
+	Graphics card #0 deviceId: 0x2187
+	Graphics card #0 versionInfo: DriverVersion=32.0.15.6603
+	Memory slot #0 capacity (MB): 8192.00
+	Memory slot #0 clockSpeed (GHz): 3.20
+	Memory slot #0 type: DDR4
+	Memory slot #1 capacity (MB): 16384.00
+	Memory slot #1 clockSpeed (GHz): 3.20
+	Memory slot #1 type: DDR4
+	Virtual memory max (MB): 49435.70
+	Virtual memory used (MB): 34315.41
+	Swap memory total (MB): 25088.00
+	Swap memory used (MB): 107.96
+	JVM Flags: 4 total; -XX:HeapDumpPath=MojangTricksIntelDriversForPerformance_javaw.exe_minecraft.exe.heapdump -Xss1M -Xmx18016m -Xms256m
+	Fabric Mods: 
+		advancementinfo: AdvancementInfo 1.20-fabric0.83.0-1.4
+		appleskin: AppleSkin 2.5.1+mc1.20
+		architectury: Architectury 9.2.14
+		bettermounthud: Better Mount HUD 1.2.2
+		betterpingdisplay: Better Ping Display 1.1.1
+		boathud: BoatHud 1.1.4
+		bobby: Bobby 5.0.1
+			com_typesafe_config: config 1.4.2
+			io_leangen_geantyref_geantyref: geantyref 1.3.13
+			org_spongepowered_configurate-core: configurate-core 4.1.2
+			org_spongepowered_configurate-hocon: configurate-hocon 4.1.2
+		calcmod: CalcMod fabric-1.20-1.3.0
+			clientarguments: clientarguments 1.5.1
+			org_mariuszgromada_math_mathparser_org-mxparser: MathParser.org-mXparser 5.0.6
+		camerautils: Camera Utils 1.20.1-1.0.5
+		chat_heads: Chat Heads 0.13.6
+		chesttracker: Chest Tracker 2.6.3+1.20.1
+			whereisit: Where Is It 2.6.3+1.20.1
+				jackfredlib: JackFredLib 0.10.2+1.20.1
+					jackfredlib-base: JackFredLib: Base 1.4.1+1.20.1
+					jackfredlib-colour: JackFredLib: Colour 1.1.0+1.20.1
+					jackfredlib-extracommandsourcedata: JackFredLib: Extra Command Source Data 1.1.1+1.20.1
+					jackfredlib-gps: JackFredLib: GPS 1.0.7+1.20.1
+					jackfredlib-lying: JackFredLib: Lying 0.5.6+1.20.1
+					jackfredlib-toasts: JackFredLib: Toasts 1.1.1+1.20.1
+		cicada: CICADA 0.9.1+1.20.1
+		clickthrough: ClickThrough 1.20-fabric0.83.0-0.4.1
+			crowdin-translate: CrowdinTranslate 1.4+1.19.3
+			gbfabrictools: GBfabrictools 1.4+1.20
+		cloth-config: Cloth Config v11 11.1.136
+			cloth-basic-math: cloth-basic-math 0.6.1
+		continuity: Continuity 3.0.0-beta.5+1.20.1
+		controlling: Controlling For Fabric 12.0.2
+		dcch: DCCH 1.2
+		distanthorizons: Distant Horizons 2.2.1-a
+		do_a_barrel_roll: Do a Barrel Roll 3.6.1+1.20.1
+			fabric-permissions-api-v0: fabric-permissions-api 0.2-SNAPSHOT
+			mixinsquared: MixinSquared 0.1.1
+		easyanvils: Easy Anvils 8.0.2
+		easymagic: Easy Magic 8.0.1
+		eatinganimationid: Eating Animation 1.20+1.9.61
+		elytrahud: ElytraHud 1.0.2
+		elytratime: Elytra Time 2.0.0
+		essential: Essential 1.3.5.5
+		essential-container: essential-container 1.0.0
+			essential-loader: essential-loader 1.2.1
+		essential-dependencies: Essential Dependencies 0
+			elementa: Elementa 670
+			universalcraft: UniversalCraft 365
+			vigilance: Vigilance 306
+		fabric-api: Fabric API 0.92.2+1.20.1
+			fabric-api-base: Fabric API Base 0.4.31+1802ada577
+			fabric-api-lookup-api-v1: Fabric API Lookup API (v1) 1.6.36+1802ada577
+			fabric-biome-api-v1: Fabric Biome API (v1) 13.0.13+1802ada577
+			fabric-block-api-v1: Fabric Block API (v1) 1.0.11+1802ada577
+			fabric-block-view-api-v2: Fabric BlockView API (v2) 1.0.1+1802ada577
+			fabric-blockrenderlayer-v1: Fabric BlockRenderLayer Registration (v1) 1.1.41+1802ada577
+			fabric-client-tags-api-v1: Fabric Client Tags 1.1.2+1802ada577
+			fabric-command-api-v1: Fabric Command API (v1) 1.2.34+f71b366f77
+			fabric-command-api-v2: Fabric Command API (v2) 2.2.13+1802ada577
+			fabric-commands-v0: Fabric Commands (v0) 0.2.51+df3654b377
+			fabric-containers-v0: Fabric Containers (v0) 0.1.64+df3654b377
+			fabric-content-registries-v0: Fabric Content Registries (v0) 4.0.11+1802ada577
+			fabric-convention-tags-v1: Fabric Convention Tags 1.5.5+1802ada577
+			fabric-crash-report-info-v1: Fabric Crash Report Info (v1) 0.2.19+1802ada577
+			fabric-data-attachment-api-v1: Fabric Data Attachment API (v1) 1.0.0+de0fd6d177
+			fabric-data-generation-api-v1: Fabric Data Generation API (v1) 12.3.4+1802ada577
+			fabric-dimensions-v1: Fabric Dimensions API (v1) 2.1.54+1802ada577
+			fabric-entity-events-v1: Fabric Entity Events (v1) 1.6.0+1c78457f77
+			fabric-events-interaction-v0: Fabric Events Interaction (v0) 0.6.2+1802ada577
+			fabric-events-lifecycle-v0: Fabric Events Lifecycle (v0) 0.2.63+df3654b377
+			fabric-game-rule-api-v1: Fabric Game Rule API (v1) 1.0.40+1802ada577
+			fabric-item-api-v1: Fabric Item API (v1) 2.1.28+1802ada577
+			fabric-item-group-api-v1: Fabric Item Group API (v1) 4.0.12+1802ada577
+			fabric-key-binding-api-v1: Fabric Key Binding API (v1) 1.0.37+1802ada577
+			fabric-keybindings-v0: Fabric Key Bindings (v0) 0.2.35+df3654b377
+			fabric-lifecycle-events-v1: Fabric Lifecycle Events (v1) 2.2.22+1802ada577
+			fabric-loot-api-v2: Fabric Loot API (v2) 1.2.1+1802ada577
+			fabric-loot-tables-v1: Fabric Loot Tables (v1) 1.1.45+9e7660c677
+			fabric-message-api-v1: Fabric Message API (v1) 5.1.9+1802ada577
+			fabric-mining-level-api-v1: Fabric Mining Level API (v1) 2.1.50+1802ada577
+			fabric-model-loading-api-v1: Fabric Model Loading API (v1) 1.0.3+1802ada577
+			fabric-models-v0: Fabric Models (v0) 0.4.2+9386d8a777
+			fabric-networking-api-v1: Fabric Networking API (v1) 1.3.11+1802ada577
+			fabric-networking-v0: Fabric Networking (v0) 0.3.51+df3654b377
+			fabric-object-builder-api-v1: Fabric Object Builder API (v1) 11.1.3+1802ada577
+			fabric-particles-v1: Fabric Particles (v1) 1.1.2+1802ada577
+			fabric-recipe-api-v1: Fabric Recipe API (v1) 1.0.21+1802ada577
+			fabric-registry-sync-v0: Fabric Registry Sync (v0) 2.3.3+1802ada577
+			fabric-renderer-api-v1: Fabric Renderer API (v1) 3.2.1+1802ada577
+			fabric-renderer-indigo: Fabric Renderer - Indigo 1.5.2+85287f9f77
+			fabric-renderer-registries-v1: Fabric Renderer Registries (v1) 3.2.46+df3654b377
+			fabric-rendering-data-attachment-v1: Fabric Rendering Data Attachment (v1) 0.3.37+92a0d36777
+			fabric-rendering-fluids-v1: Fabric Rendering Fluids (v1) 3.0.28+1802ada577
+			fabric-rendering-v0: Fabric Rendering (v0) 1.1.49+df3654b377
+			fabric-rendering-v1: Fabric Rendering (v1) 3.0.8+1802ada577
+			fabric-resource-conditions-api-v1: Fabric Resource Conditions API (v1) 2.3.8+1802ada577
+			fabric-resource-loader-v0: Fabric Resource Loader (v0) 0.11.10+1802ada577
+			fabric-screen-api-v1: Fabric Screen API (v1) 2.0.8+1802ada577
+			fabric-screen-handler-api-v1: Fabric Screen Handler API (v1) 1.3.30+1802ada577
+			fabric-sound-api-v1: Fabric Sound API (v1) 1.0.13+1802ada577
+			fabric-transfer-api-v1: Fabric Transfer API (v1) 3.3.5+8dd72ea377
+			fabric-transitive-access-wideners-v1: Fabric Transitive Access Wideners (v1) 4.3.1+1802ada577
+		fabric-language-kotlin: Fabric Language Kotlin 1.12.3+kotlin.2.0.21
+			org_jetbrains_kotlin_kotlin-reflect: kotlin-reflect 2.0.21
+			org_jetbrains_kotlin_kotlin-stdlib: kotlin-stdlib 2.0.21
+			org_jetbrains_kotlin_kotlin-stdlib-jdk7: kotlin-stdlib-jdk7 2.0.21
+			org_jetbrains_kotlin_kotlin-stdlib-jdk8: kotlin-stdlib-jdk8 2.0.21
+			org_jetbrains_kotlinx_atomicfu-jvm: atomicfu-jvm 0.25.0
+			org_jetbrains_kotlinx_kotlinx-coroutines-core-jvm: kotlinx-coroutines-core-jvm 1.9.0
+			org_jetbrains_kotlinx_kotlinx-coroutines-jdk8: kotlinx-coroutines-jdk8 1.9.0
+			org_jetbrains_kotlinx_kotlinx-datetime-jvm: kotlinx-datetime-jvm 0.6.1
+			org_jetbrains_kotlinx_kotlinx-io-bytestring-jvm: kotlinx-io-bytestring-jvm 0.5.4
+			org_jetbrains_kotlinx_kotlinx-io-core-jvm: kotlinx-io-core-jvm 0.5.4
+			org_jetbrains_kotlinx_kotlinx-serialization-cbor-jvm: kotlinx-serialization-cbor-jvm 1.7.3
+			org_jetbrains_kotlinx_kotlinx-serialization-core-jvm: kotlinx-serialization-core-jvm 1.7.3
+			org_jetbrains_kotlinx_kotlinx-serialization-json-jvm: kotlinx-serialization-json-jvm 1.7.3
+		fabricloader: Fabric Loader 0.16.9
+			mixinextras: MixinExtras 0.4.1
+		forgeconfigapiport: Forge Config API Port 8.0.1
+		indium: Indium 1.0.34+mc1.20.1
+		iris: Iris 1.7.5+mc1.20.1
+			io_github_douira_glsl-transformer: glsl-transformer 2.0.1
+			org_anarres_jcpp: jcpp 1.4.14
+			org_antlr_antlr4-runtime: antlr4-runtime 4.13.1
+		java: OpenJDK 64-Bit Server VM 17
+		lambdynlights: LambDynamicLights 2.3.2+1.20.1
+			pride: Pride Lib 1.2.0+1.19.4
+			spruceui: SpruceUI 5.0.0+1.20
+		litematica: Litematica 0.15.3
+		malilib: MaLiLib 0.16.3
+		midnightcontrols: MidnightControls 1.9.4+1.20
+			org_aperlambda_lambdajcommon: lambdajcommon 1.8.1
+		midnightlib: MidnightLib 1.4.1
+		minecraft: Minecraft 1.20.1
+		minihud: MiniHUD 0.27.0
+		modmenu: Mod Menu 7.2.2
+		mousewheelie: Mouse Wheelie 1.13.0+mc1.20.1
+			amecsapi: Amecs API 1.5.1+mc1.20-pre1
+			coat: Coat 1.0.0-beta.20+mc1.20-pre1
+			tweed4_annotated: tweed4_annotated 1.3.1+mc1.20-pre1
+			tweed4_base: tweed4_base 1.7.1+mc1.20-pre1
+			tweed4_data: tweed4_data 1.2.1+mc1.20-pre1
+			tweed4_data_hjson: tweed4_data_hjson 1.1.1+mc1.20-pre1
+			tweed4_tailor_coat: tweed4_tailor_coat 1.1.3+mc1.20-pre1
+			tweed4_tailor_lang_json_descriptions: tweed4_tailor_lang_json_descriptions 1.1.0+mc1.20-pre1
+			tweed4_tailor_screen: tweed4_tailor_screen 1.1.4+mc1.20-pre1
+		org_jetbrains_annotations: annotations 23.0.0
+		overworld_coordinates: Overworld Coordinates 2.0.0
+		puzzleslib: Puzzles Lib 8.1.25
+			puzzlesaccessapi: Puzzles Access Api 8.0.7
+		reeses-sodium-options: Reese's Sodium Options 1.7.2+mc1.20.1-build.101
+		replanter: Replanter 1.3
+		roughlyenoughitems: Roughly Enough Items 12.1.785
+			error_notifier: Error Notifier 1.0.9
+		searchables: Searchables 1.0.3
+		shulkerboxtooltip: Shulker Box Tooltip 4.0.4+1.20.1
+		skinlayers3d: 3d-Skin-Layers 1.7.2
+		sodium: Sodium 0.5.11+mc1.20.1
+		sodium-extra: Sodium Extra 0.5.4+mc1.20.1-build.115
+			caffeineconfig: CaffeineConfig 1.3.0+1.17
+		spark: spark 1.10.53
+		status-effect-bars: Status Effect Bars 1.0.3
+		supermartijn642corelib: SuperMartijn642's Core Lib 1.1.17+a
+		visualworkbench: Visual Workbench 8.0.0
+		voicechat: Simple Voice Chat 1.20.1-2.4.28
+		worldedit: WorldEdit 7.2.15+6463-5ca4dff
+		wurst: Wurst Client v7.46.1-MC1.20.1
+		xaerominimap: Xaero's Minimap 24.6.1
+		xaeroworldmap: Xaero's World Map 1.39.0
+		yet_another_config_lib_v3: YetAnotherConfigLib 3.6.1+1.20.1-fabric
+			com_twelvemonkeys_common_common-image: common-image 3.10.0
+			com_twelvemonkeys_common_common-io: common-io 3.10.0
+			com_twelvemonkeys_common_common-lang: common-lang 3.10.0
+			com_twelvemonkeys_imageio_imageio-core: imageio-core 3.10.0
+			com_twelvemonkeys_imageio_imageio-metadata: imageio-metadata 3.10.0
+			com_twelvemonkeys_imageio_imageio-webp: imageio-webp 3.10.0
+			org_quiltmc_parsers_gson: gson 0.2.1
+			org_quiltmc_parsers_json: json 0.2.1
+	Loaded Shaderpack: (off)
+	Launched Version: fabric-loader-0.16.9-1.20.1
+	Backend library: LWJGL version 3.3.1 SNAPSHOT
+	Backend API: NVIDIA GeForce GTX 1650 SUPER/PCIe/SSE2 GL version 3.2.0 NVIDIA 566.03, NVIDIA Corporation
+	Window size: 1920x1009
+	GL Caps: Using framebuffer using OpenGL 3.2
+	GL debug messages: 
+	Using VBOs: Yes
+	Is Modded: Definitely; Client brand changed to 'fabric'
+	Type: Client (map_client.txt)
+	Graphics mode: fancy
+	Resource Packs: vanilla, fabric, file/TCT2020TCT Totem (incompatible), file/No_Pumpkin_Blur_119b_3plus.zip (incompatible), file/VanillaTweaks Visual Infested Stone Items.zip (incompatible), file/VanillaTweaks Spyglass Meme.zip (incompatible), continuity:default, continuity:glass_pane_culling_fix, minecraft:supporteatinganimation, file/VanillaTweaks_r572256.zip, file/CTM-Overhaul-V_5.0.zip, file/Brewing Guide 1.20.zip, file/GUIdes v.1.1.zip, file/shiny ores 1.20.5–1.20.6 v1.2.zip (incompatible), file/VanillaTweaks 3D.zip
+	Current Language: en_us
+	CPU: 12x Intel(R) Core(TM) i5-10400F CPU @ 2.90GHz

@@ -1,0 +1,135 @@
+{
+  "minecraft:overworld": {
+    "memories": {
+      "-1,60,0": {
+        "container": "minecraft:stone_button",
+        "loadedTimestamp": 6101,
+        "worldTimestamp": 427521,
+        "realTimestamp": "2024-11-30T16:28:49.268749300Z",
+        "items": [],
+        "name": {
+          "bold": true,
+          "insertion": "df05cd01-03cc-4ddf-b6da-79e28e417d9a",
+          "hoverEvent": {
+            "action": "show_entity",
+            "contents": {
+              "type": "minecraft:villager",
+              "id": "df05cd01-03cc-4ddf-b6da-79e28e417d9a",
+              "name": {
+                "bold": true,
+                "text": "Utility"
+              }
+            }
+          },
+          "text": "Utility"
+        }
+      },
+      "-82,-1,6": {
+        "container": "minecraft:smooth_quartz",
+        "loadedTimestamp": 24504,
+        "worldTimestamp": 445907,
+        "realTimestamp": "2024-11-30T16:54:21.342421200Z",
+        "items": [
+          {
+            "id": "minecraft:diamond",
+            "Count": 56
+          },
+          {
+            "id": "minecraft:beacon",
+            "Count": 1,
+            "tag": {
+              "CustomModelData": 1,
+              "display": {
+                "Name": "{\"text\":\"Health Pool\",\"italic\":false}"
+              },
+              "Enchantments": [
+                {}
+              ]
+            }
+          }
+        ],
+        "name": {
+          "bold": true,
+          "insertion": "207f9d04-2d36-4e2e-a797-77b27ce3eb96",
+          "hoverEvent": {
+            "action": "show_entity",
+            "contents": {
+              "type": "minecraft:villager",
+              "id": "207f9d04-2d36-4e2e-a797-77b27ce3eb96",
+              "name": {
+                "bold": true,
+                "text": "Upgrades"
+              }
+            }
+          },
+          "text": "Upgrades"
+        }
+      },
+      "6,-1,82": {
+        "container": "minecraft:smooth_quartz",
+        "loadedTimestamp": 25105,
+        "worldTimestamp": 446506,
+        "realTimestamp": "2024-11-30T16:54:56.769817900Z",
+        "items": [
+          {
+            "id": "minecraft:diamond",
+            "Count": 40
+          },
+          {
+            "id": "minecraft:beacon",
+            "Count": 1,
+            "tag": {
+              "CustomModelData": 1,
+              "display": {
+                "Name": "{\"text\":\"Health Pool\",\"italic\":false}"
+              },
+              "Enchantments": [
+                {}
+              ]
+            }
+          }
+        ],
+        "name": {
+          "bold": true,
+          "insertion": "f587b341-8d55-4ff0-8839-7051db20ada6",
+          "hoverEvent": {
+            "action": "show_entity",
+            "contents": {
+              "type": "minecraft:villager",
+              "id": "f587b341-8d55-4ff0-8839-7051db20ada6",
+              "name": {
+                "bold": true,
+                "text": "Upgrades"
+              }
+            }
+          },
+          "text": "Upgrades"
+        }
+      },
+      "6,-2,83": {
+        "container": "minecraft:command_block",
+        "loadedTimestamp": 21147,
+        "worldTimestamp": 442550,
+        "realTimestamp": "2024-11-30T16:46:22.345690700Z",
+        "items": [],
+        "name": {
+          "bold": true,
+          "insertion": "49632df9-fdfb-4a01-b53d-a94cc2695231",
+          "hoverEvent": {
+            "action": "show_entity",
+            "contents": {
+              "type": "minecraft:villager",
+              "id": "49632df9-fdfb-4a01-b53d-a94cc2695231",
+              "name": {
+                "bold": true,
+                "text": "Upgrades"
+              }
+            }
+          },
+          "text": "Upgrades"
+        }
+      }
+    },
+    "overrides": {}
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "minecraft:overworld": {
+    "memories": {
+      "33,-59,-29": {
+        "container": "minecraft:dropper",
+        "loadedTimestamp": 9959,
+        "worldTimestamp": 1606887,
+        "realTimestamp": "2024-12-15T10:49:12.511592400Z",
+        "items": [
+          {
+            "id": "minecraft:redstone",
+            "Count": 1,
+            "tag": {
+              "display": {
+                "Lore": [
+                  "{\"text\":\"TCT2020TCT Passwort Tür (Keycard)\",\"obfuscated\":true}"
+                ],
+                "Name": "{\"text\":\"TCT2020TCT Keycard\",\"color\":\"blue\",\"bold\":true}"
+              },
+              "Enchantments": []
+            }
+          }
+        ]
+      }
+    },
+    "overrides": {}
+  }
+}

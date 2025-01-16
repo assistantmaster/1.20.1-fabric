@@ -1,0 +1,50 @@
+{
+  "filtering": {
+    "rememberedContainers": "ALL",
+    "rememberEnderChests": true,
+    "autoAddPlacedBlocks": "SHULKER_BOXES_ONLY",
+    "manualMode": false,
+    "onlyRememberNamed": false
+  },
+  "integrity": {
+    "memoryLifetime": "TWELVE_HOURS",
+    "preserveNamed": true,
+    "lifetimeCountMode": "LOADED_TIME",
+    "removeOnPlayerBlockBreak": true,
+    "checkPeriodicallyForMissingBlocks": true
+  },
+  "search": {
+    "itemListRange": "infinite",
+    "searchRange": "infinite",
+    "stackMergeMode": "ALL",
+    "unpackNested": true
+  },
+  "visual": {
+    "icons": [
+      {
+        "id": "chesttracker:ender_chest",
+        "icon": "minecraft:ender_chest"
+      },
+      {
+        "id": "minecraft:overworld",
+        "icon": "minecraft:grass_block"
+      },
+      {
+        "id": "minecraft:the_nether",
+        "icon": "minecraft:netherrack"
+      },
+      {
+        "id": "minecraft:the_end",
+        "icon": "minecraft:end_stone"
+      }
+    ],
+    "useDefaultIconOrder": true
+  },
+  "name": "Multiplayer: 8BitSMP",
+  "lastModified": "2025-01-16T17:44:31.217861600Z",
+  "loadedTime": 6472488,
+  "compatibility": {
+    "nameFilterMode": "NO_FILTER",
+    "nameRenderMode": "FULL"
+  }
+}
