@@ -1,0 +1,19 @@
+{
+  "sorting_status": "disabled",
+  "sorting_mode": "name",
+  "cursor_stack_behaviour": "keep_cursor_stack",
+  "automatic_refilling_status": "disabled",
+  "automatic_refilling_mode": "automatic",
+  "tool_replacement_behaviour": "break_tool",
+  "tool_replacement_priority": "material",
+  "automatic_refilling_ignore_locked_slots": "true",
+  "profiles_status": "disabled",
+  "fast_load": "true",
+  "pickup_into_locked_slots": "false",
+  "quick_move_into_locked_slots": "false",
+  "profiles_ignore_locked_slots": "true",
+  "show_lock": "true",
+  "locked_slot_style": "filled",
+  "locked_slots_color": "-11711155",
+  "locked_slots_hotbar_color": "-1773318835"
+}

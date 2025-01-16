@@ -1,0 +1,22 @@
+#
+#waypoint:name:initials:x:y:z:color:disabled:type:set:rotate_on_tp:tp_yaw:visibility_type:destination
+#
+waypoint:Coral Reef:C:4847:72:-3422:12:false:0:gui.xaero_default:false:0:0:false
+waypoint:Lushcave:L:-2599:3:1951:5:false:0:gui.xaero_default:false:0:0:false
+waypoint:Unsere Base:U:-553:72:343:12:false:0:gui.xaero_default:false:0:0:false
+waypoint:Chunk abbauen:C:-2038:64:1387:1:false:0:gui.xaero_default:false:0:0:false
+waypoint:Goofy ah moos block:G:-1880:67:1605:0:false:0:gui.xaero_default:false:0:0:false
+waypoint:Jonas Base:J:-1903:58:242:4:false:0:gui.xaero_default:false:0:0:false
+waypoint:Outpost:O:-1865:86:2311:0:false:0:gui.xaero_default:false:0:0:false
+waypoint:Mika Base:M:-9000:~:1616:0:false:0:gui.xaero_default:false:0:0:false
+waypoint:Endportal:E:-1364:-19:1125:14:false:0:gui.xaero_default:false:0:0:false
+waypoint:Sumpf:S:-989:68:2748:6:false:0:gui.xaero_default:false:0:0:false
+waypoint:Raidfarm:R:-2651:62:615:2:false:0:gui.xaero_default:false:0:0:false
+waypoint:Spawn:S:-16:66:-423:1:false:0:gui.xaero_default:false:0:0:false
+waypoint:Konrads Base:K:-2455:~:1078:9:false:0:gui.xaero_default:false:0:0:false
+waypoint:Iron Farm:I:-1901:65:1624:7:false:0:gui.xaero_default:false:0:0:false
+waypoint:Portal Festung:P:-1606:71:-1228:13:false:0:gui.xaero_default:false:0:0:false
+waypoint:Dorf 2:D:-2372:81:1148:9:false:0:gui.xaero_default:false:0:0:false
+waypoint:Dorf:D:-2149:81:1483:15:false:0:gui.xaero_default:false:0:0:false
+waypoint:Damm:D:-1198:65:242:4:false:0:gui.xaero_default:false:0:0:false
+waypoint:Mansion:M:-742:97:-522:2:false:0:gui.xaero_default:false:0:0:false

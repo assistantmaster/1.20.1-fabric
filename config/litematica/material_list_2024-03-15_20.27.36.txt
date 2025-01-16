@@ -1,0 +1,23 @@
++---------------------+-------+---------+-------------------+
+| Material List for placement 'Empfänger Wireless Redstone' |
++---------------------+-------+---------+-------------------+
+| Item                | Total | Missing |         Available |
++---------------------+-------+---------+-------------------+
+| Dirt                |   121 |     121 |                 0 |
+| Grass Block         |    69 |      69 |                 0 |
+| Stone               |    41 |       3 |                 0 |
+| Redstone Repeater   |    23 |      23 |                16 |
+| Powered Rail        |    14 |      14 |                 4 |
+| Observer            |    13 |      13 |                 8 |
+| Dropper             |     7 |       7 |                 0 |
+| Redstone Dust       |     5 |       5 |                 0 |
+| Sticky Piston       |     5 |       5 |                 0 |
+| Redstone Comparator |     4 |       4 |                47 |
+| Spruce Trapdoor     |     3 |       3 |                 0 |
+| Daylight Detector   |     2 |       2 |                 0 |
+| Hopper              |     2 |       2 |                 9 |
+| Note Block          |     2 |       2 |                 0 |
+| Target              |     1 |       1 |                 4 |
++---------------------+-------+---------+-------------------+
+| Item                | Total | Missing |         Available |
++---------------------+-------+---------+-------------------+

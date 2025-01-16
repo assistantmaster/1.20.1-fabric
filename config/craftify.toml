@@ -1,0 +1,34 @@
+
+[general]
+	allowed_servers = "your.server.here"
+	announce_new_song = 2
+	link_mode = 0
+	send_the_essential_packets = false
+	first_time = false
+	mod_mode = -1
+	notification_album_art_location = 1
+	music_service = "spotify"
+	send_the_packets = false
+	send_songs_to_servers = false
+	announcement_message = "&aCraftify > &7Now Playing: &b${song} by ${artists}"
+
+[servers]
+	allowed_servers = "pixlsmp.hopto.org\n"
+	send_songs_to_servers = true
+
+[rendering]
+	controls = true
+	display_mode = 2
+	position_x_offset = 0.0
+	position_y_offset = 0.0
+	anchor_point = 0
+	render_type = 2
+
+[login]
+	refresh_token = "AQDf9bOQ3lHK8AK3e4A1cd50aOtyLUYcl8rT9MOZUr53pDeOgl8nv0t5fA2hETi_l_9cJqAsPJ5knd7XmLsnP3vJzHL9QwoyJDXtZY0eRwM6TjErwojBOpTmDtEzAxSS3g0"
+	spotify_login_token = "BQDDfSTCUmY3iwNgiEHF_h4C8M8kR9Q5I12gt8spnq4vXjlugNLE3QnkvtAwILTSIrNSHg_-32Wb3HlOq7tvTNUu3cWMyrLUGBs9fPSZisa6UL9mUxsZC4aLwK6RVm0UQ_rGismnv4kB10X5buDV1OYZUE1CBAchnRbJLYGcAWYTLDGYM6eML5eXRkjy_3jnuJrL"
+	login_button = "login"
+	ytmd_password = ""
+	ytmd_token = ""
+	service_port = 8880
+
